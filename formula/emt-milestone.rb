@@ -3,8 +3,8 @@ require "formula"
 class EmtMilestone < Formula
   desc "Enhanced Mule Tools CLI ( Milestone release )"
   homepage "https://www.enhanced-mule.com"
-  url "https://repo1.maven.org/maven2/com/aeontronix/enhanced-mule/enhanced-mule-tools-cli/1.3.0-rc9/enhanced-mule-tools-cli-1.3.0-rc9-dist.tbz2"
-  sha256 "d5f8d24ffbee55369685d153e7e11549aa7be63c8a93347eb4608777e3a2f860"
+  url "https://repo1.maven.org/maven2/com/aeontronix/enhanced-mule/enhanced-mule-tools-cli/1.3.0-rc10/enhanced-mule-tools-cli-1.3.0-rc10-dist.tbz2"
+  sha256 "b3f9914c1326271230feb3079c6614076e84b7c2481e74e269ef099314edecad"
   head "https://github.com/enhanced-mule/homebrew-tools.git"
 
   def install
@@ -13,6 +13,6 @@ class EmtMilestone < Formula
   end
 
   test do
-    assert_match "1.3.0-rc9", shell_output("#{bin}/emt -V", 2)
+    assert_match "1.3.0-rc10", shell_output("#{bin}/emt -V", 2)
   end
 end
