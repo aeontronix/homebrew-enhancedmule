@@ -1,6 +1,6 @@
 require "formula"
 
-class EmtMilestone < Formula
+class Emt < Formula
   desc "Enhanced Mule Tools CLI ( Milestone release )"
   homepage "https://www.enhanced-mule.com"
   url "https://repo1.maven.org/maven2/com/aeontronix/enhanced-mule/enhanced-mule-tools-cli/1.3.0/enhanced-mule-tools-cli-1.3.0-dist.tbz2"
