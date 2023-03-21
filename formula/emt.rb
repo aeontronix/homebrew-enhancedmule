@@ -3,8 +3,8 @@ require "formula"
 class Emt < Formula
   desc "Enhanced Mule Tools CLI"
   homepage "https://www.enhanced-mule.com"
-  url "https://repo1.maven.org/maven2/com/aeontronix/enhanced-mule/enhanced-mule-tools-cli/1.4.39/enhanced-mule-tools-cli-1.4.39-dist.tbz2"
-  sha256 "92e1c402578ab6c10429b959a58cacab9aec765c93a021db70ee414f387e923e"
+  url "https://repo1.maven.org/maven2/com/aeontronix/enhanced-mule/enhanced-mule-tools-cli/1.4.40/enhanced-mule-tools-cli-1.4.40-dist.tbz2"
+  sha256 "2cea57650b8baad7a1a98f086f79409f95dbf25f39cd16e998906cbf45b19492"
   head "https://github.com/enhanced-mule/homebrew-tools.git"
 
   def install
@@ -12,6 +12,6 @@ class Emt < Formula
     bin.write_exec_script libexec/"bin/emt"
   end
     test do
-      assert_match "1.4.39", shell_output("#{bin}/emt -V", 2)
+      assert_match "1.4.40", shell_output("#{bin}/emt -V", 2)
     end
 end
